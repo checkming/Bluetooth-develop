@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ckming.androidthings.MainActivity">
+
+    <Button
+        android:id="@+id/btn_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="open"
+        android:text="打开蓝牙"
+        />
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btn_open"
+        android:onClick="close"
+        android:text="关闭蓝牙"
+        />
+
+    <Button
+        android:id="@+id/btn_serach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_open"
+        android:onClick="search"
+        android:text="搜素蓝牙"
+        />
+
+    <Button
+        android:id="@+id/btn_cesae"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_close"
+        android:layout_toRightOf="@+id/btn_serach"
+        android:onClick="cease"
+        android:text="停止搜素"
+        />
+
+    <Button
+        android:id="@+id/btn_openright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_serach"
+        android:onClick="openright"
+        android:text="开灯"
+        />
+
+    <Button
+        android:id="@+id/btn_closeright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btn_openright"
+        android:layout_below="@+id/btn_cesae"
+        android:onClick="closeright"
+        android:text="关灯"
+        />
+
+    <Button
+        android:id="@+id/btn_manual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btn_closeright"
+        android:layout_below="@+id/btn_cesae"
+        android:onClick="manual"
+        android:text="手动"
+        />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_below="@+id/btn_openright"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</RelativeLayout>
